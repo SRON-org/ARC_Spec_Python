@@ -182,9 +182,6 @@ register_parser('mycustom', MyCustomParser, ['custom', 'my'])
 
 本项目采用MIT许可证 - 查看[LICENSE](LICENSE)文件了解详情。
 
-## 🙏 致谢
-
-感谢所有为这个项目做出贡献的开发者！
 
 ---
 
