@@ -104,36 +104,7 @@ register_parser('mycustom', MyCustomParser, ['custom', 'my'])
 ```
 
 ### 3. 创建配置文件
-
-在`configs/`目录下创建`MyCustom.ai.json`:
-
-```json
-{
-    "FriendlyName": "我的自定义解析器",
-    "Model": "my-custom-model",
-    "Introduction": "这是一个自定义解析器示例",
-    "ResponseType": "mycustom",
-    "MaxTokens": 4000
-}
-```
-
-## 📋 配置文件格式
-
-配置文件使用JSON格式，必须以`.ai.json`结尾：
-
-```json
-{
-    "FriendlyName": "显示名称",
-    "Model": "模型名称",
-    "Introduction": "简介",
-    "ResponseType": "解析器类型",
-    "ApiKey": "API密钥",
-    "BaseUrl": "基础URL",
-    "MaxTokens": 4000,
-    "Temperature": 0.7,
-    "it_multimodal_model": "false"
-}
-```
+请看[ARC_Spec](https://github.com/SRON-org/ARC_Spec)
 
 ## 🔧 内置解析器
 
