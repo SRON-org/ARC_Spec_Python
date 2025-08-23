@@ -183,6 +183,4 @@ register_parser('mycustom', MyCustomParser, ['custom', 'my'])
 本项目采用MIT许可证 - 查看[LICENSE](LICENSE)文件了解详情。
 
 
----
 
-**ARC Spec Team** - 让AI集成变得更简单！
