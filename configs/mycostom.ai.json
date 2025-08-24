@@ -1,0 +1,11 @@
+{
+  "FriendlyName": "我的自定义解析器",
+  "Model": "mycostom-model-v1",
+  "Introduction": "这是一个使用自定义解析器的配置示例",
+  "ResponseType": "mycostom",
+  "Temperature": 0.7,
+  "MaxTokens": 1000,
+  "Personality": "你是一个友好的自定义AI助手，总是乐于帮助用户。",
+  "max_history_tokens": 2000,
+  "max_history_messages": 15
+}

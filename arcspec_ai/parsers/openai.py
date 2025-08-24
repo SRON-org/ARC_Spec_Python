@@ -141,9 +141,8 @@ class OpenAIParser(BaseParser):
             return response_content.strip() if response_content != self.if_return_none else response_content
                     
         except Exception as e:
-            error_msg = f"API调用失败: {str(e)}"
-            logger.error(error_msg)
-            return error_msg
+            logger.error(f"API调用失败: {str(e)}")
+            raise e
     
     def _handle_stream_response(self, api_params: dict) -> str:
         """
@@ -180,9 +179,8 @@ class OpenAIParser(BaseParser):
             return full_response.strip() if full_response else self.if_return_none
             
         except Exception as e:
-            error_msg = f"流式响应错误: {str(e)}"
-            logger.error(error_msg)
-            return error_msg
+            logger.error(f"流式响应错误: {str(e)}")
+            raise e
     
     def clear_history(self) -> None:
         """清空对话历史记录"""

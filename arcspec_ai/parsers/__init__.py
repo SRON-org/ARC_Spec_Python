@@ -16,13 +16,13 @@ from .registry import (
 # 自动注册内置解析器
 register_parser('openai', OpenAIParser, ['gpt', 'chatgpt'])
 
-# 导入示例解析器并注册
+# 导入自定义解析器并注册
 try:
-    from .example import ExampleParser
-    register_parser('example', ExampleParser, ['demo', 'test'])
+    from .mycostom import mycostomParser
+    register_parser('mycostom', mycostomParser)
 except ImportError as e:
     import logging
-    logging.getLogger(__name__).warning(f"无法导入ExampleParser: {e}")
+    logging.getLogger(__name__).warning(f"无法导入 mycostomParser: {e}")
 
 # 自动发现其他解析器
 discover_parsers()
