@@ -1,0 +1,24 @@
+{   "$schema": "https://json-schema.org/draft-07/schema#",
+    "FriendlyName": "Example",
+    "Introduction": "CloseAISB",
+    "ResponseType": "closeai",
+    "it_multimodal_model":"False",
+    "BaseURL": "http://1.com/v1",
+    "APIKey": "",
+    "Model": "gemini-2.0-flash",
+    "Temperature": 0.5,
+    "MaxTokens": 1000,
+    "TopP": 1,
+    "TopK": 1,
+    "other": {
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "stream": true
+
+    },
+    "Extra_Body":{},
+    "Personality":"",
+    "if_return_none":"哇，这个模型啥也没回复！"
+
+
+}
